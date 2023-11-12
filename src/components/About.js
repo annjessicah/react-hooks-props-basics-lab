@@ -10,5 +10,18 @@ function About() {
     </div>
   );
 }
+function bio(props){
+  console.log(props);
+
+  if (props.bio){
+    //if bio is passed
+    //return <p> tag
+    return (<p>Put the bio here</p>)
+  }else{
+    //bio not passed or an empty string
+    //return null
+    return null
+  }
+}
 
 export default About;
